@@ -40,7 +40,7 @@ export default function ContactSection() {
           variants={itemVariants}
           className="text-center max-w-xl mx-auto text-neutral-400 mb-16"
         >
-          Have a project in mind or just want to say hi? I'd love to hear from you. Fill out the form or send me an email.
+          Have a project in mind or just want to say hi? I&apos;d love to hear from you. Fill out the form or send me an email.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-16">
