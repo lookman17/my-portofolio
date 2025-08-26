@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... CSS lain yang mungkin sudah Anda miliki ... */
+
+body {
+  /* Properti ini akan menciptakan stacking context baru */
+  /* dan menyelesaikan masalah z-index */
+  isolation: isolate; 
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 12s ease infinite;
+}

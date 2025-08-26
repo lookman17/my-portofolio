@@ -1,7 +1,21 @@
-import type { NextConfig } from "next";
+// File: next.config.js
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Tambahkan atau gabungkan dengan konfigurasi 'images' ini
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        // 'hostname' adalah bagian penting yang perlu Anda tambahkan
+        hostname: 'jqwiiakvlddjlakvuqkm.supabase.co', 
+        port: '',
+        pathname: '/storage/v1/object/public/**',
+      },
+    ],
+  },
+  // Konfigurasi lain yang mungkin sudah Anda miliki bisa tetap di sini
+  // reactStrictMode: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
