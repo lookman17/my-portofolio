@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useActiveSection } from './useActiveSection'
+import { useActiveSection } from './UseActiveSection'
 
 import { Menu, X } from 'lucide-react'
 
