@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowUp } from 'lucide-react'
-import { FaGithub, FaLinkedin, FaInstagram, FaDribbble, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram,FaYoutube } from 'react-icons/fa'
 
 // Data untuk Link Sosial Media (Ganti URL '#' dengan link Anda)
 const socialLinks = [

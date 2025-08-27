@@ -81,7 +81,7 @@ export default function Introduction() {
                     variants={itemVariants}
                     className="max-w-xs sm:max-w-xl text-neutral-300 leading-relaxed mb-8 sm:mb-10"
                 >
-                    I am a fullstack developer from Malang, Indonesia with 2 years of experience at School and now I'm interning at PT. Universal Big Data.
+                    I am a fullstack developer from Malang, Indonesia with 2 years of experience at School and now Im interning at PT. Universal Big Data.
                     I love to create beautiful, functional, and user-friendly websites and web applications.
                 </motion.p>
                 
