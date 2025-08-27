@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useActiveSection } from './useActiveSection' // Pastikan path ini benar
+import { useActiveSection } from './useActiveSection'
+
 import { Menu, X } from 'lucide-react'
 
 // Data untuk item navigasi
