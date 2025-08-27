@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="pt-20 space-y-16 py-10 scrollbar-hide">
+      <main className="pt-20 py-10 scrollbar-hide">
         <Introduction />
         <AboutMe />
         <ServicesSection/>

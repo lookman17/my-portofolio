@@ -2,14 +2,14 @@
 
 import { motion } from 'framer-motion'
 import { ArrowUp } from 'lucide-react'
-import { FaGithub, FaLinkedin, FaInstagram, FaDribbble } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram, FaDribbble, FaYoutube } from 'react-icons/fa'
 
 // Data untuk Link Sosial Media (Ganti URL '#' dengan link Anda)
 const socialLinks = [
-  { name: 'GitHub', icon: <FaGithub size={20} />, url: '#' },
-  { name: 'LinkedIn', icon: <FaLinkedin size={20} />, url: '#' },
-  { name: 'Instagram', icon: <FaInstagram size={20} />, url: '#' },
-  { name: 'Dribbble', icon: <FaDribbble size={20} />, url: '#' },
+  { name: 'GitHub', icon: <FaGithub size={20} />, url: 'https://github.com/lookman17' },
+  { name: 'LinkedIn', icon: <FaLinkedin size={20} />, url: 'https://www.linkedin.com/in/luqman-hakim-1374a1329/' },
+  { name: 'Instagram', icon: <FaInstagram size={20} />, url: 'https://www.instagram.com/lluminho._/' },
+  { name: 'Youtube', icon: <FaYoutube size={20} />, url: 'https://www.youtube.com/@lluminho' },
 ]
 
 // Varian Animasi untuk efek staggered
