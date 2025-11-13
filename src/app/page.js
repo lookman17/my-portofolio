@@ -19,18 +19,21 @@ export default function HomePage() {
         <ProjectsSection />
         <ContactSection />
 
-        {/* Load external script */}
-        <Script src="https://noboxcall-five.vercel.app/AIAgentCall.js" strategy="afterInteractive" />
-
-        {/* Initialize AI Agent */}
-        <Script id="ai-agent-init" strategy="afterInteractive">
-          {`
-            AIAgentCall.init({
-              callAgentId: "c2e92bfc-c65c-40d0-8099-eb35f6772e64",
-              chatAgentId: "15c92c19-fecf-431c-8e00-11d25de2b178"
-            });
-          `}
-        </Script>
+        {/* Load external script and initialize after it's ready */}
+        <Script
+          src="https://noboxcall-five.vercel.app/AIAgentCall.js"
+          strategy="afterInteractive"
+          onLoad={() => {
+            if (window.AIAgentCall) {
+              window.AIAgentCall.init({
+                callAgentId: "c2e92bfc-c65c-40d0-8099-eb35f6772e64",
+                chatAgentId: "15c92c19-fecf-431c-8e00-11d25de2b178"
+              });
+            } else {
+              console.error("AIAgentCall tidak tersedia di window");
+            }
+          }}
+        />
       </main>
     </>
   )
