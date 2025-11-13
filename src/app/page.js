@@ -1,3 +1,5 @@
+"use client"
+
 import Navbar from '@/app/components/Navbar'
 import AboutMe from '@/app/components/AboutMe'
 import Introduction from '@/app/components/Introduction'
@@ -19,7 +21,6 @@ export default function HomePage() {
         <ProjectsSection />
         <ContactSection />
 
-        {/* Load external script and initialize after it's ready */}
         <Script
           src="https://noboxcall-five.vercel.app/AIAgentCall.js"
           strategy="afterInteractive"
@@ -29,8 +30,6 @@ export default function HomePage() {
                 callAgentId: "c2e92bfc-c65c-40d0-8099-eb35f6772e64",
                 chatAgentId: "15c92c19-fecf-431c-8e00-11d25de2b178"
               });
-            } else {
-              console.error("AIAgentCall tidak tersedia di window");
             }
           }}
         />
